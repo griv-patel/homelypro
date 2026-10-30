@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homely Pro | Painter Service</title>
+<link rel="stylesheet" href="painter.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M12 22V12M12 12L21 7M12 12L3 7" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">Homely Pro</span>
+          <span class="logo-sub">Cooperative Services Platform</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="servicelogin.html" class="nav-link active">Service</a>
+        <a href="contactus.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-filled" id="registerBtn">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <span class="badge">⚡ 24/7 SERVICE AVAILABLE</span>
+      <h1 class="hero-title">PAINTER</h1>
+      <p class="hero-subtitle">Brighten &amp; Beautify Your<br>Space with Perfect Colors</p>
+      <p class="hero-desc">From interior to exterior painting, our skilled painters deliver flawless finishes that transform your space.</p>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-image-wrap">
+        <img src="painter.jpeg" alt="Painter rolling paint on a wall" class="hero-image" id="heroImage">
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2 class="section-title">— Our <span class="highlight">Painter</span> Services —</h2>
+    <p class="section-subtitle">Choose the painting service you need and book with trusted cooperative workers.</p>
+
+    <div class="services-grid" id="servicesGrid">
+
+      <div class="service-card" data-service="Interior Painting" data-price="299">
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64" width="48" height="48">
+            <rect x="14" y="20" width="14" height="10" rx="2" fill="none" stroke="#1e7a3a" stroke-width="2.5"/>
+            <path d="M21 30 V44" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M21 44 C21 48 25 50 25 50" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Interior Painting</h3>
+        <p class="service-desc">Enhance the beauty of your interiors with smooth and long-lasting finishes.</p>
+        <span class="service-label">STARTING FROM</span>
+        <span class="service-price">₹299</span>
+        <button class="btn-book" data-service="Interior Painting" data-price="299">Book Now <span class="arrow">➜</span></button>
+      </div>
+
+      <div class="service-card" data-service="Exterior Painting" data-price="399">
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64" width="48" height="48">
+            <path d="M32 14 L50 28 V48 H14 V28 Z" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M27 40 Q32 34 37 40 V48 H27 Z" fill="none" stroke="#1e7a3a" stroke-width="2.3" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Exterior Painting</h3>
+        <p class="service-desc">Weather-resistant exterior painting to protect and give your home a fresh look.</p>
+        <span class="service-label">STARTING FROM</span>
+        <span class="service-price">₹399</span>
+        <button class="btn-book" data-service="Exterior Painting" data-price="399">Book Now <span class="arrow">➜</span></button>
+      </div>
+
+      <div class="service-card" data-service="Wall Texture & Design" data-price="499">
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64" width="48" height="48">
+            <rect x="26" y="14" width="8" height="20" rx="4" transform="rotate(45 30 24)" fill="none" stroke="#1e7a3a" stroke-width="2.3"/>
+            <path d="M22 34 L30 42 L26 46 L18 38 Z" fill="none" stroke="#1e7a3a" stroke-width="2.3" stroke-linejoin="round"/>
+            <path d="M16 44 L20 48 L14 50 Z" fill="none" stroke="#1e7a3a" stroke-width="2.3" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Wall Texture &amp; Design</h3>
+        <p class="service-desc">Add style and elegance with premium wall textures and custom designs.</p>
+        <span class="service-label">STARTING FROM</span>
+        <span class="service-price">₹499</span>
+        <button class="btn-book" data-service="Wall Texture & Design" data-price="499">Book Now <span class="arrow">➜</span></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M24 4 L40 10 V22 C40 33 33 41 24 44 C15 41 8 33 8 22 V10 Z" fill="none" stroke="#1e7a3a" stroke-width="2.5"/><path d="M17 24 L22 29 L32 18" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>Verified Painters</h4>
+      <p>All painters are verified and experienced.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M14 16 H34 V26 C34 32 29 36 24 36 C19 36 14 32 14 26 Z" fill="none" stroke="#1e7a3a" stroke-width="2.3" stroke-linejoin="round"/><path d="M20 36 V42 H28 V36" fill="none" stroke="#1e7a3a" stroke-width="2.3" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>Quality Paints</h4>
+      <p>We use premium quality paints for lasting beauty.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><circle cx="24" cy="24" r="18" fill="none" stroke="#1e7a3a" stroke-width="2.5"/><path d="M24 14 V24 L32 29" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+      <h4>Timely Service</h4>
+      <p>We value your time and convenience.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M12 40 C12 22 24 10 40 8 C40 24 30 36 12 40 Z" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 40 C18 32 24 26 32 20" fill="none" stroke="#1e7a3a" stroke-width="2.3" stroke-linecap="round"/></svg>
+      </div>
+      <h4>Clean &amp; Safe</h4>
+      <p>We ensure a neat, clean and safe painting process.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="logo">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M12 22V12M12 12L21 7M12 12L3 7" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-title">Homely Pro</span>
+            <span class="logo-sub">Cooperative Services Platform</span>
+          </div>
+        </div>
+        <p>Connecting verified cooperative workers with households for reliable, affordable and fair services.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="YouTube">y</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="servicelogin.html">Service</a>
+        <a href="howitworks.html">How It Works</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>For Customers</h5>
+        <a href="becomeaworker.html">Book a Service</a>
+        <a href="howitworks.html">How It Works</a>
+        <a href="#">Payment Options</a>
+        <a href="#">Support</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <p>📞 +91 7984252966</p>
+        <p>💬 +91 8511833294</p>
+        <p>✉️ homelypro123@gmail.com</p>
+        <p>📍 Pakwan, Behind Rajpath Club Gate to Sindhu Bhavan Road, Sarkhej - Gandhinagar Hwy, AEC Char Rasta, Ahmedabad, Gujarat 380059</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© 2024 Homely Pro. All rights reserved.</div>
+  </footer>
+
+  <script src="painter.js"></script>
+</body>
+</html>

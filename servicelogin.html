@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoopService - Our Services</title>
+<link rel="stylesheet" href="servicelogin.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#1a8f4c" stroke-width="1.5">
+            <path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Homely Pro</span>
+          <span class="logo-subtitle">Homely Pro Services Platform</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="servicelogin.html" class="active">Services</a>
+        <a href="howitworks.html">How It Works</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="becomeaworker.html">Become a Worker</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <select class="lang-select">
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-solid" id="registerBtn">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Our <span>Services</span></h1>
+      <p>Explore a wide range of reliable services from verified cooperative workers.</p>
+    </div>
+    <div class="hero-skyline" aria-hidden="true"></div>
+  </section>
+
+  <!-- Search bar -->
+  <section class="search-section">
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search for a service...">
+    </div>
+    <select class="category-select" id="categorySelect">
+      <option value="all">All Categories</option>
+      <option value="home">Home Services</option>
+      <option value="care">Care Services</option>
+      <option value="skilled">Skilled Trades</option>
+    </select>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-grid" id="servicesGrid">
+    <!-- Cards are injected by servicelogin.js -->
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat">
+      <span class="stat-icon">👥</span>
+      <div><strong>5000+</strong><p>Verified Workers</p></div>
+    </div>
+    <div class="stat">
+      <span class="stat-icon">😊</span>
+      <div><strong>2000+</strong><p>Happy Customers</p></div>
+    </div>
+    <div class="stat">
+      <span class="stat-icon">✅</span>
+      <div><strong>100%</strong><p>Verified &amp; Trusted</p></div>
+    </div>
+    <div class="stat">
+      <span class="stat-icon">₹</span>
+      <div><strong>Affordable</strong><p>Transparent Pricing</p></div>
+    </div>
+    <div class="stat">
+      <span class="stat-icon">🕐</span>
+      <div><strong>24/7</strong><p>Support Available</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col brand-col">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1a8f4c" stroke-width="1.5">
+              <path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">Homely Pro</span>
+            <span class="logo-subtitle">Homely Pro Services Platform</span>
+          </div>
+        </div>
+        <p>Connecting verified cooperative workers with households for reliable, affordable and fair services.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="servicelogin.html">Services</a>
+        <a href="howitworks.html">How It Works</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>For Workers</h4>
+        <a href="becomeaworker.html">Become a Worker</a>
+        <a href="becomeaworker.html">Worker Login</a>
+        <a href="#">Benefits</a>
+        <a href="#">Training &amp; Support</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>For Customers</h4>
+        <a href="servicelogin.html">Book a Service</a>
+        <a href="howitworks.html">How It Works</a>
+        <a href="#">Payment Options</a>
+        <a href="#">Support</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">TW</a>
+          <a href="#">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2024 CoopService. All rights reserved.</div>
+  </footer>
+
+  <script src="servicelogin.js"></script>
+</body>
+</html>

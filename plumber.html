@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homely Pro | Plumber Service</title>
+<link rel="stylesheet" href="plumber.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M12 22V12M12 12L21 7M12 12L3 7" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">Homely Pro</span>
+          <span class="logo-sub">Cooperative Services Platform</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="servicelogin.html" class="nav-link active">Service</a>
+        <a href="contactus.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-filled" id="registerBtn">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <span class="badge">⚡ 24/7 SERVICE AVAILABLE</span>
+      <h1 class="hero-title">PLUMBER</h1>
+      <p class="hero-subtitle">Reliable &amp; Professional Plumbing<br>Services for Your Home &amp; Office</p>
+      <p class="hero-desc">From minor leaks to complete installations, our verified plumbers provide fast, reliable and affordable plumbing solutions.</p>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-image-wrap">
+        <img src="plm.jpeg" alt="..." class="hero-image" id="heroImage">
+        <div class="hero-curve"></div>
+       
+          <span class="hero-badge-text">SERVICE<br>AVAILABLE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2 class="section-title">— Our <span class="highlight">Plumber</span> Services —</h2>
+    <p class="section-subtitle">Choose the plumber service you need and book with trusted cooperative workers.</p>
+
+    <div class="services-grid" id="servicesGrid">
+
+      <div class="service-card" data-service="Pipes & Fittings" data-price="299">
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64" width="48" height="48">
+            <path d="M16 22 H30 V30 H16 Z" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M30 26 H40" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="34" cy="26" r="2" fill="#1e7a3a"/>
+            <path d="M34 34 Q34 40 30 44 Q26 48 28 52" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Pipes &amp; Fittings</h3>
+        <p class="service-desc">Installation and repair of pipes, fittings, valves and water connections.</p>
+        <span class="service-label">STARTING FROM</span>
+        <span class="service-price">₹299</span>
+        <button class="btn-book" data-service="Pipes & Fittings" data-price="299">Book Now <span class="arrow">➜</span></button>
+      </div>
+
+      <div class="service-card" data-service="Bathroom Installation" data-price="499">
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64" width="48" height="48">
+            <rect x="22" y="14" width="20" height="34" rx="4" fill="none" stroke="#1e7a3a" stroke-width="2.5"/>
+            <circle cx="32" cy="24" r="4" fill="none" stroke="#1e7a3a" stroke-width="2.3"/>
+            <path d="M28 48 H36" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Bathroom Installation</h3>
+        <p class="service-desc">Complete bathroom installation and plumbing solutions.</p>
+        <span class="service-label">STARTING FROM</span>
+        <span class="service-price">₹499</span>
+        <button class="btn-book" data-service="Bathroom Installation" data-price="499">Book Now <span class="arrow">➜</span></button>
+      </div>
+
+      <div class="service-card" data-service="Leak Repair & Drain Cleaning" data-price="349">
+        <div class="service-icon">
+          <svg viewBox="0 0 64 64" width="48" height="48">
+            <path d="M20 16 V32 Q20 40 28 40 H36 Q44 40 44 32" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M44 32 V48" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="service-name">Leak Repair &amp; Drain Cleaning</h3>
+        <p class="service-desc">Leak detection, pipe leakage repair and drain cleaning services.</p>
+        <span class="service-label">STARTING FROM</span>
+        <span class="service-price">₹349</span>
+        <button class="btn-book" data-service="Leak Repair & Drain Cleaning" data-price="349">Book Now <span class="arrow">➜</span></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M24 4 L40 10 V22 C40 33 33 41 24 44 C15 41 8 33 8 22 V10 Z" fill="none" stroke="#1e7a3a" stroke-width="2.5"/><path d="M17 24 L22 29 L32 18" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>Verified Plumbers</h4>
+      <p>All plumbers are verified and experienced.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M32 8 L40 16 L20 36 L10 38 L12 28 Z" fill="none" stroke="#1e7a3a" stroke-width="2.3" stroke-linejoin="round"/><path d="M6 42 L12 38" stroke="#1e7a3a" stroke-width="2.3" stroke-linecap="round"/></svg>
+      </div>
+      <h4>Quality Workmanship</h4>
+      <p>We ensure high quality work and long lasting solutions.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><circle cx="24" cy="24" r="18" fill="none" stroke="#1e7a3a" stroke-width="2.5"/><path d="M24 14 V24 L32 29" fill="none" stroke="#1e7a3a" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+      <h4>24/7 Support</h4>
+      <p>We are available 24/7 for your plumbing emergencies.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><circle cx="24" cy="24" r="18" fill="none" stroke="#1e7a3a" stroke-width="2.5"/><path d="M18 16 H27 C30 16 32 18 32 21 C32 24 30 26 27 26 H18 M18 21 H30 M18 32 H28" fill="none" stroke="#1e7a3a" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </div>
+      <h4>Affordable Pricing</h4>
+      <p>Transparent pricing with no hidden charges.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="logo">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M12 22V12M12 12L21 7M12 12L3 7" stroke="#1e7a3a" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-title">Homely Pro</span>
+            <span class="logo-sub">Cooperative Services Platform</span>
+          </div>
+        </div>
+        <p>Connecting verified cooperative workers with households for reliable, affordable and fair services.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="YouTube">y</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="servicelogin.html">Service</a>
+        <a href="howitworks.html">How It Works</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>For Customers</h5>
+        <a href="servicelogin.html">Book a Service</a>
+        <a href="howitworks.html">How It Works</a>
+        <a href="#">Payment Options</a>
+        <a href="#">Support</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <p>📞 +91 7984252966</p>
+        <p>💬 +91 8511833294</p>
+        <p>✉️ homelypro123@gmail.com</p>
+        <p>📍 Pakwan, Behind Rajpath Club Gate to Sindhu Bhavan Road, Sarkhej - Gandhinagar Hwy, AEC Char Rasta, Ahmedabad, Gujarat 380059</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© 2024 Homely Pro. All rights reserved.</div>
+  </footer>
+
+  <script src="plumber.js"></script>
+</body>
+</html>
